@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #232527;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #00b06b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #01905b;
+}
+
+.robux-options {
+  margin-top: 20px;
+}
+
+.profile-box img {
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.payment-box, .result-box {
+  margin-top: 30px;
+}
