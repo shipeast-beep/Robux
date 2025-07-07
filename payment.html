@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Payment</h1>
+    <p>Amount: <span id="amount"></span> Robux</p>
+    <p>Card: **** **** **** 7284</p>
+    <button onclick="completePayment()">Pay</button>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const amount = params.get("amount") || "unknown";
+    document.getElementById("amount").textContent = amount;
+
+    function completePayment() {
+      window.location.href = "success.html";
+    }
+  </script>
+</body>
+</html>
