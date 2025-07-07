@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Robux Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ROBLOX</div>
+    <div class="nav">Robux Shop</div>
+  </header>
+
+  <main class="container">
+    <h1>Robux Shop</h1>
+    <input type="text" id="username" placeholder="Enter your Roblox username">
+    <button onclick="findUser()">Search</button>
+
+    <div id="profile" class="profile-box"></div>
+
+    <h2>Select Robux amount:</h2>
+    <div class="robux-options">
+      <button onclick="selectAmount(400)">400 R$</button>
+      <button onclick="selectAmount(800)">800 R$</button>
+      <button onclick="selectAmount(1700)">1700 R$</button>
+    </div>
+
+    <div id="payment" class="payment-box" style="display:none;">
+      <h3>Payment</h3>
+      <p>Card: **** **** **** 7284</p>
+      <button onclick="pay()">Pay</button>
+    </div>
+
+    <div id="result" class="result-box" style="display:none;">
+      <h2>Thanks! Robux sent.</h2>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
